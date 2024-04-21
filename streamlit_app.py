@@ -3,7 +3,13 @@ import streamlit as st
 import pandas as pd
 
 def main():
-    st.title("Data Presentation with Streamlit")
+    st.title("Interactive Data Presentation with Streamlit")
+
+    # Add a text input widget
+    user_input = st.text_input("Enter your name", "John Doe")
+    
+    # Display the input value
+    st.write("Hello,", user_input)
 
     # Create some sample data
     data = {
@@ -14,7 +20,7 @@ def main():
     df = pd.DataFrame(data)
 
     # Display the data as a table
-    st.write("Sample Data:")
+    st.write("\nSample Data:")
     st.dataframe(df)
 
 if __name__ == "__main__":
