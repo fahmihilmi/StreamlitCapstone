@@ -13,7 +13,7 @@ def main():
 if __name__ == "__main__":
     main()
 # app.py
-def main():
+    
     st.title("Data Presentation with Streamlit")
 
     # Create some sample data
